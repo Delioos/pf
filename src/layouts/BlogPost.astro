@@ -7,7 +7,7 @@ import { Icon } from "astro-icon";
 import { SITE } from "@config";
 
 export interface Props {
-    post: CollectionEntry<"blog">;
+    post: CollectionEntry<"projects">;
 }
 
 const { post } = Astro.props;
@@ -35,7 +35,7 @@ const { Content } = await post.render();
                 >
                     <a
                         class="blog-back-button cursor-pointer text-neutral-500 flex no-underline mb-16"
-                        href="/blog/"
+                        href="/projects/"
                     >
                         <Icon name="ph:arrow-left-light" class="w-6 h-6 mr-4" />
                         Back
@@ -83,7 +83,7 @@ const { Content } = await post.render();
 
 <script>
     // Function to create a Back to history button.
-    const buttons = document.querySelectorAll(".blog-back-button");
+    const buttons = document.querySelectorAll(".projects-back-button");
     if (buttons) {
         buttons.forEach((button) => {
             button.addEventListener("click", () => {
@@ -96,7 +96,7 @@ const { Content } = await post.render();
         if (window.history.length > 1) {
             window.history.back();
         } else {
-            window.location.href = "/blog/";
+            window.location.href = "/projects/";
         }
     }
 </script>

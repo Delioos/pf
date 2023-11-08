@@ -1,6 +1,6 @@
 ---
 title: "Astro Lane V1.0.0"
-description: "Are you looking to personalize your blog's look and feel? Look no further than Astro Lane, the latest AstroJS theme from chrstnl!"
+description: "Are you looking to personalize your projects's look and feel? Look no further than Astro Lane, the latest AstroJS theme from chrstnl!"
 pubDate: 2023-04-24
 heroImage: "/images/astro-lane.png"
 featured: true

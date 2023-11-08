@@ -14,7 +14,8 @@
             "@/utils/*": ["utils/*"],
             "@/data/*": ["data/*"]
         },
-        "types": ["@astrojs/image/client"]
+        "types": ["@astrojs/image/client"],
+      "jsx": "react"
     },
     "exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"]
 }
