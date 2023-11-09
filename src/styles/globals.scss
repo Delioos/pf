@@ -26,3 +26,52 @@
 
 // Core Plugins
 // @import "plugins/plugin-tailwind";
+
+
+// le reste faire par moi coucou
+.horizontal-line {
+  border-top: 1px solid black;
+}
+
+.vertical-line {
+  border-left: 1px solid black;
+  height: 100px; /* Adjust the height as needed */
+}
+
+.diagonal-line {
+  position: relative;
+  width: 100px; /* Adjust the width as needed */
+  height: 0;
+  border-bottom: 1px solid black;
+  transform: rotate(45deg);
+}
+
+.content-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translate3d(0, 0, 0);
+  z-index: -1;
+}
+
+.content {
+  margin-top: 550px; /* Adjust this value to create space for the parallax effect */
+}
+
