@@ -1,11 +1,12 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
-import {Image} from "@astrojs/image/components";
+import { Image } from "@astrojs/image/components";
 import FormattedDate from "../../src/components/FormattedDate.astro";
 import {getCollection} from "astro:content";
 import {Icon} from "astro-icon";
 import getSortedTags from "@/utils/getSortedTags";
+import mountain from "/src/images/mountains.png";
 
 const posts = await getCollection("projects");
 
@@ -28,7 +29,7 @@ const sortedPosts = posts
 
             <div class="parallax-container">
                 <div class="parallax-image mt-36">
-                    <Image src="src/images/mountains.png" alt="Grayscale mountain" width="1920" aspectRatio="{1 / 1}" />
+                    <Image src={mountain} alt="Grayscale mountain" width="1920" aspectRatio="{1 / 1}" />
                 </div>
                 <script src="../styles/scripts/parallax.ts"></script>
             </div>
