@@ -2,12 +2,6 @@
 import Layout from "@/layouts/Layout.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import {Image} from "@astrojs/image/components";
-import projectData from "@/data/projectData.json";
-import CardGroup from "@/components/card/CardGroup.astro";
-import Card from "@/components/card/Card.astro";
-import CardBody from "@/components/card/CardBody.astro";
-import CardImage from "@/components/card/CardImage.astro";
-import CardHeader from "@/components/card/CardHeader.astro";
 import FormattedDate from "../../src/components/FormattedDate.astro";
 import {getCollection} from "astro:content";
 import {Icon} from "astro-icon";
@@ -34,10 +28,9 @@ const sortedPosts = posts
 
             <div class="parallax-container">
                 <div class="parallax-image mt-36">
-                    <img src="src/images/mountains.png" alt="Grayscale mountain" width="100%" aspectRatio="{1/1}"/>
+                    <Image src="src/images/mountains.png" alt="Grayscale mountain" width="1920" aspectRatio="{1 / 1}" />
                 </div>
-                <style></style>
-                <script src="styles/scripts/parallax.ts"></script>
+                <script src="../styles/scripts/parallax.ts"></script>
             </div>
 
             <div class="fixed-content">
