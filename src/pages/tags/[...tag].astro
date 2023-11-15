@@ -11,7 +11,7 @@ export interface Props {
 }
 
 export async function getStaticPaths() {
-    const posts = await getCollection("blog");
+    const posts = await getCollection("projects");
     const tags = getSortedTags(posts);
 
     return tags.map((tag) => {
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 }
 
 const { tag } = Astro.props;
-const posts = await getCollection("blog", ({ data }) => !data.draft);
+const posts = await getCollection("projects", ({ data }) => !data.draft);
 const tagPosts = getPostsByTag(posts, tag);
 ---
 
